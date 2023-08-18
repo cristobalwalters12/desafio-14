@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assest/css/style.css" />
+    <title>Document</title>
+  </head>
+    <body>
+        <nav
+        class="d-flex justify-content-between justify-content-lg-start p-3 align-items-center flex-lg-column"
+      >
+      <div class="input-group mb-3 inputs">
+        <p>Cantidad de Cuartos:</p>
+        <input class="input" type="Number" id="cuartos" >
+        <p class="pt-4">Metros Cuadrados</p>
+        <div class="metros">
+            <div>
+                <p>desde</p>
+                <input class="input form-control-sm" type="Number" id="desde">
+            </div>
+            <div>
+                <p>hasta</p>
+                <input class="input form-control-sm" type="Number" id="hasta">
+            </div>
+        </div>
+        <div class="pt-4">
+            <button id="button" type="button" class="btn btn-warning">Buscar</button>
+        </div>
+      </div>
+      </nav>
+      <aside>
+        <span class="contador"></span>
+      </aside>
+      <main class="p-4">
+        <div class="departamentos">
+        </div>
+      </main>
+      <script src="./assest/js/index.js"></script>
+    </body>
+      <footer class="p-2">
+        <div class="mb-lg-3 d-flex justify-content-center">
+        </div>
+        <h6 class="d-flex justify-content-center">
+          Todos los derechos reservados
+        </h6>
+      </footer>
+    </div>
+</html>

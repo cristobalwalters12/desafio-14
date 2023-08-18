@@ -1,0 +1,166 @@
+@media (max-width: 576px) {
+  body {
+    margin: 0;
+    text-align: center;
+    color: white;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 10fr 1fr;
+    grid-template-areas:
+      "nav"
+      "aside"
+      "main"
+      "footer";
+  }
+
+  nav {
+    grid-area: nav;
+    background-color: #01578b;
+    padding: 10px;
+  }
+  aside {
+    grid-area: aside;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e1e2e1;
+  }
+  main {
+    grid-area: main;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  main {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card {
+    color: black;
+  }
+  .card button {
+    background-color: #01578b;
+  }
+  footer {
+    grid-area: footer;
+    background-color: darkblue;
+    color: white;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 577px) {
+  body {
+    margin: 0;
+    text-align: center;
+    color: white;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas:
+      "nav aside"
+      "nav main"
+      "footer main";
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+    grid-area: nav;
+    background-color: #01578b;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .input {
+    width: 50%;
+  }
+  .metros {
+    display: flex;
+  }
+  aside {
+    grid-area: aside;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+  }
+  main {
+    grid-area: main;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .departamentos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+
+    position: relative;
+  }
+
+  .card button {
+    background-color: #01578b;
+  }
+  footer {
+    grid-area: footer;
+    background-color: darkblue;
+    color: white;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+  }
+}
+.metrica {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+}
